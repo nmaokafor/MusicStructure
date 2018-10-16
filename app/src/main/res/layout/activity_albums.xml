@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AlbumsActivity">
+
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_dark_color"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/menuPlaylist"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/playlist"
+                android:text="@string/play_lists"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/menuArtists"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/artists"
+                android:text="@string/artists"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/menuSongs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/songs"
+                android:text="@string/songs"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/menuNowPlaying"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/now_playing"
+                android:text="@string/now_playing"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/album_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="true"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth" />
+
+    </LinearLayout>
+

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">MusicStructureApp</string>
+    <string name="albums_name">Albums</string>
+    <string name="artist_name">Artists</string>
+    <string name="music_store_name">Music Store</string>
+    <string name="settings_name">Settings</string>
+    <string name="play_lists">Playlist</string>
+    <string name="albums">Albums</string>
+    <string name="artists">Artists</string>
+    <string name="songs">Songs</string>
+
+    <string name="artist_1">Adekunle Gold</string>
+    <string name="artist_2">Asa</string>
+    <string name="artist_3">Falz</string>
+
+    <string name="album_1">About 30</string>
+    <string name="album_2">Beautiful Imperf...</string>
+    <string name="album_3">Bed Of Stone</string>
+    <string name="album_4">Bhad Guy</string>
+
+    <string name="song_1">Pick Up</string>
+    <string name="song_2">Bed Of Stone</string>
+    <string name="song_3">Jailer</string>
+    <string name="song_4">Gold</string>
+    <string name="song_5">About 30</string>
+    <string name="song_6">Ire</string>
+    <string name="song_7">Big</string>
+    <string name="song_8">My Life</string>
+    <string name="song_9">Jeje</string>
+
+
+    <string name="about_adekunle">Adekunle Kosoko, popularly known by his stage name Adekunle Gold, is a Nigerian highlife singer, songwriter and graphic designer. He describes his genre of music as "urban highlife". His 2014 single "Sade" received massive airplay on various Nigerian... </string>
+    <string name="about_asa">Asa\'s music influences grew over the years from the collection of great music her father had built up for his work as a cinematographer. These records featuring American, Nigerian and African soul classics, included musical greats like Marvin Gaye, Fela Kuti... </string>
+    <string name="about_falz">Folarin Falana (born October 27, 1990 in Lagos State), better known by his stage name Falz is a Nigerian rapper, actor, and songwriter.[1] He began his career while in secondary school after forming a group called "The School Boys" with his friend before his...</string>
+
+    <string name="read_more_button_name">Read more</string>
+
+    <string name="start_time">0:00</string>
+    <string name="song_time">3:46</string>
+
+
+    <string name="most_played">Most Played</string>
+    <string name="recently_added">Recently Added</string>
+    <string name="favorite_tracks">Favorite Tracks</string>
+    <string name="new_playlist">New Playlist</string>
+    <string name="now_playing">Now Playing</string>
+
+    <string name="current_song">Song</string>
+    <string name="current_artist">Artist</string>
+
+</resources>

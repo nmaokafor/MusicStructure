@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaylistsActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accent_color"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menuAlbums"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/albums"
+            android:text="@string/albums"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/menuArtists"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/artists"
+            android:text="@string/artists"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/menuSongs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/songs"
+            android:text="@string/songs"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/menuNowPlaying"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/now_playing"
+            android:text="@string/now_playing"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+                style="@style/MenuStyle2"
+                android:background="@color/playlist2"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    style="@style/MenuIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/new_playlist"
+                    android:src="@drawable/add_playlist"
+                    android:background="@color/playlist2"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/addNewPlaylist"
+                    style="@style/MenuText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/new_playlist" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MenuStyle2"
+                android:background="@color/playlist"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    style="@style/MenuIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/most_played"
+                    android:src="@drawable/playlist"
+                    android:background="@color/playlist"/>
+
+                <TextView
+                    style="@style/MenuText"
+                    android:id="@+id/mostPlayed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/most_played" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/MenuStyle2"
+                android:background="@color/playlist2"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    style="@style/MenuIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/recently_added"
+                    android:src="@drawable/playlist"
+                    android:background="@color/playlist2"/>
+
+                <TextView
+                    android:id="@+id/recentlyAdded"
+                    style="@style/MenuText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/recently_added" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MenuStyle2"
+                android:background="@color/playlist"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    style="@style/MenuIcon"
+                    android:background="@color/playlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/favorite_tracks"
+                    android:src="@drawable/playlist" />
+
+                <TextView
+                    android:id="@+id/favoriteTracks"
+                    style="@style/MenuText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/favorite_tracks" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

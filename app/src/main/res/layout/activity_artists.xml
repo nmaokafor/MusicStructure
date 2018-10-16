@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ArtistsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_dark_color"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menuPlaylist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/playlist"
+            android:text="@string/play_lists"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/menuAlbums"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/albums"
+            android:text="@string/albums"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/menuSongs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/songs"
+            android:text="@string/songs"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/menuNowPlaying"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/now_playing"
+            android:text="@string/now_playing"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <SearchView
+                android:id="@+id/searchForArtists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="true"
+                android:queryHint="Search" />
+
+            <ListView
+                android:id="@+id/artists_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true" />
+
+        </LinearLayout>
+</LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/margin"-->
+                <!--android:layout_marginLeft="@dimen/margin"-->
+                <!--android:layout_marginRight="@dimen/margin"-->
+                <!--android:background="@color/accent_color"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="@dimen/margin"-->
+                    <!--android:layout_marginTop="@dimen/margin"-->
+                    <!--android:text="@string/artist_2"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_margin="@dimen/margin"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:src="@drawable/asa_artist" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="@string/about_asa"/>-->
+
+                        <!--<Button-->
+                            <!--android:id="@+id/readMoreButton2"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dp"-->
+                            <!--android:layout_weight="0.4"-->
+                            <!--android:backgroundTint="@color/primary_color"-->
+                            <!--android:text="@string/read_more_button_name"-->
+                            <!--android:textColor="@android:color/white" />-->
+
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/margin"-->
+                <!--android:layout_marginLeft="@dimen/margin"-->
+                <!--android:layout_marginRight="@dimen/margin"-->
+                <!--android:background="@color/accent_color"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="@dimen/margin"-->
+                    <!--android:layout_marginTop="@dimen/margin"-->
+                    <!--android:text="@string/artist_3"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_margin="@dimen/margin"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:src="@drawable/falz_artist" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="@string/about_falz" />-->
+
+                        <!--<Button-->
+                            <!--android:id="@+id/readMoreButton3"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dp"-->
+                            <!--android:layout_weight="0.4"-->
+                            <!--android:backgroundTint="@color/primary_color"-->
+                            <!--android:text="@string/read_more_button_name"-->
+                            <!--android:textColor="@android:color/white" />-->
+
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+
+<!--</LinearLayout>-->
